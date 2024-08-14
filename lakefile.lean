@@ -10,3 +10,10 @@ lean_lib «LakeInternalApiExample» where
 @[default_target]
 lean_exe "lake-internal-api-example" where
   root := `Main
+
+
+@[test_driver]
+lean_exe test where
+  srcDir := "tests"
+  supportInterpreter := true
+  
